@@ -136,3 +136,5 @@ function bought()
     alert.classList.add('d-block');
     alert.innerHTML = "Item bought. (" + qty + " pieces.)";
 }
+
+ads.children[0].volume = 0;
