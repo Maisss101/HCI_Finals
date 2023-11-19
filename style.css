@@ -1,0 +1,67 @@
+:root
+{
+    --black: #222529;
+    --gray: #b3b3b3;
+}
+
+*
+{
+    color: var(--gray);
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.bi
+{
+    color: var(--black);
+    font-size: 1.4rem;
+}
+
+body
+{
+    height: 100vh;
+    background-color: #eee;
+}
+
+.border
+{
+    margin: 7px 0;
+    border: none !important;
+}
+
+.btn
+{
+    width: inherit;
+}
+
+form
+{
+    max-width: 500px !important;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px 0;
+}
+
+input
+{
+    width: inherit;
+}
+
+.margin-top
+{
+    margin-top: 24px;
+}
+
+.label
+{
+    color: var(--black);
+}
+
+.row
+{
+    width: 450px;
+    margin: 4px 0;
+}

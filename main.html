@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronos Shop</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Chronos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>    
+                </li>
+                <li class="nav-item">
+                    <div class="nav-link dropdown-toggle" id="dropdownMenuButton" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Menu
+                    </div>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <div class="dropdown-label">Personal</div>
+                        <a class="dropdown-item" href="#"><i class="bi bi-person-circle"></i><span class="icon-label">Profile</span></a>
+                        <a class="dropdown-item" href="#"><i class="bi bi-star"></i><span class="icon-label">Favorites</span></a>
+                        <a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right"></i><span class="icon-label">Sign Out</span></a>
+                        <div class="dropdown-divider"></div>
+                        <div class="dropdown-label">Services</div>
+                        <a class="dropdown-item" href="#"><i class="bi bi-gear"></i><span class="icon-label">Settings</span></a>
+                        <a class="dropdown-item" href="#"><i class="bi bi-info-circle"></i><span class="icon-label">Need Help</span></a>
+                        <a class="dropdown-item" href="#"><i class="bi bi-chat-left-dots"></i><span class="icon-label">Give Feedback</span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-md" id="products">
+        <div class="row">
+            <div class="col h1 text-center">Products</div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-2 card" style="width: 18rem;" name="Athletics Tee - Royal Blue" price="900" stock="21" ratings="4" sold="537">
+                <img src="./products/shirt1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Product Name</h5>
+                    <p class="card-text">Product Price</p>
+                </div>
+            </div>
+            <div class="col-2 card" style="width: 18rem;" name="Athletics Tee - Brown" price="900" stock="41" ratings="3" sold="477">
+                <img src="./products/shirt2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Product Name</h5>
+                    <p class="card-text">Product Price</p>
+                </div>
+            </div>
+            <div class="col-2 card" style="width: 18rem;" name="DBTK Lace Shorts - Black" price="1100" stock="38" ratings="4" sold="585">
+                <img src="./products/bot1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Product Name</h5>
+                    <p class="card-text">Product Price</p>
+                </div>
+            </div>
+            <div class="col-2 card" style="width: 18rem;" name="DBTK Lace Shorts - Cream" price="1100" stock="41" ratings="3" sold="441">
+                <img src="./products/bot2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Product Name</h5>
+                    <p class="card-text">Product Price</p>
+                </div>
+            </div>
+            <div class="col-2 card" style="width: 18rem;" name="DBTK Tweed Shorts - Black" price="1100" stock="42" ratings="5" sold="495">
+                <img src="./products/bot3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Product Name</h5>
+                    <p class="card-text">Product Price</p>
+                </div>
+            </div>
+            <div class="col-2 card" style="width: 18rem;" name="DBTK Tweed Shorts - Brown" price="1100" stock="23" ratings="3" sold="591">
+                <img src="./products/bot4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Product Name</h5>
+                    <p class="card-text">Product Price</p>
+                </div>
+            </div>
+            <div class="col-2 card" style="width: 18rem;" name="Kaleidoscope Tee - Black" price="950" stock="27" ratings="5" sold="442">
+                <img src="./products/shirt3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Product Name</h5>
+                    <p class="card-text">Product Price</p>
+                </div>
+            </div>
+            <div class="col-2 card" style="width: 18rem;" name="Kaleidoscope Tee - Cream" price="950" stock="48" ratings="4" sold="544">
+                <img src="./products/shirt4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Product Name</h5>
+                    <p class="card-text">Product Price</p>
+                </div>
+            </div>
+            <div class="col-2 card" style="width: 18rem;" name="Pickup Crew Cap (Oat/Green)" price="1100" stock="31" ratings="5" sold="680" id="viewed-item">
+                <img src="./products/cap1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Product Name</h5>
+                    <p class="card-text">Product Price</p>
+                </div>
+            </div>
+            <div class="col-2 card" style="width: 18rem;" name="Pickup Crew Cap (Oat/Black)" price="1100" stock="45" ratings="5" sold="663">
+                <img src="./products/cap2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Product Name</h5>
+                    <p class="card-text">Product Price</p>
+                </div>
+            </div>
+            <div class="col-2 card" style="width: 18rem;" name="DBTK Waffle Pants - Brown" price="1200" stock="22" ratings="4" sold="568">
+                <img src="./products/bot5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Product Name</h5>
+                    <p class="card-text">Product Price</p>
+                </div>
+            </div>
+            <div class="col-2 card" style="width: 18rem;" name="DBTK Waffle Pants - Khaki" price="1200" stock="30" ratings="3" sold="624">
+                <img src="./products/bot6.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Product Name</h5>
+                    <p class="card-text">Product Price</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="overview" class="container-fluid fixed-top d-none justify-content-center align-items-center p-0 m-0">
+        <div class="row">
+            <div class="col p-0">
+                <img src="./products/bot1.png" alt="" id="overview-product">
+            </div>
+            <div class="col bg-light" id="overview-details">
+                <div class="row d-flex justify-content-end">
+                    <div class="btn btn-link" id="overview-close" onclick="hide()"><i class="bi bi-x-lg"></i></div>
+                </div>
+                <div class="row">
+                    <div class="col h4" id="overview-title">Product Title</div>
+                </div>
+                <div class="row" id="overview-review">
+                    <div class="col" id="overview-rating">Product Rating</div>
+                    <div class="col" id="overview-rated">Product Rated By</div>
+                    <div class="col" id="overview-sold">Product Sold</div>
+                </div>
+                <div class="row">
+                    <div class="col h2" id="overview-price">Product Price</div>
+                </div>
+                <div class="row" id="overview-quantity-selection">
+                    <div class="col-2">
+                        <label for="customRange2" class="form-label">Quantity</label></div>
+                    <div class="col">
+                        <input type="range" class="form-range" min="0" id="overview-quantity" value="0" oninput="updateQuantity(this.value)">
+                    </div>
+                    <div class="col-1">
+                        <div id="overview-quantity-count">0</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col text-muted" id="overview-quantity-max">Max</div>
+                </div>
+                <div class="row d-flex align-items-center">
+                    <div class="col-2">
+                        <label for="customRange2" class="form-label pt-2">Sizes</label></div>
+                    <div class="col" id="overview-sizes-selection">
+                        <button class="btn btn-outline-secondary overview-sizes">S</button>
+                        <button class="btn btn-outline-secondary overview-sizes">M</button>
+                        <button class="btn btn-outline-secondary overview-sizes">L</button>
+                        <button class="btn btn-outline-secondary overview-sizes">XL</button>
+                    </div>
+                </div>
+                <div class="row" id="final-action">
+                    <div class="col-5">
+                        <div class="btn btn-outline-success" id="final-add-to-cart" onclick="carted()"><i class="bi bi-cart-plus"></i>&nbsp;Add to Cart</div>
+                    </div>
+                    <div class="col-5">
+                        <div class="btn btn-success text-light" id="final-buy-now" onclick="bought()"><i class="bi bi-truck"></i>&nbsp;Buy Now</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="alert alert-success" role="alert" id="alert">Alert Success</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed-top d-none justify-content-center align-items-center bg-dark" id="advertisement">
+        <video no-controls autoplay>
+            <source src="./ads/FEU HYMN DRIX PAULO E MOLINA.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="btn btn-dark text-light d-none justify-content-center align-items-center" id="skip" onclick="skip()"> Skip Ad</div>
+    </div>
+    
+    <!-- My Script -->
+    <script src="main.js"></script>
+
+    <!-- Bootstrap Script -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
