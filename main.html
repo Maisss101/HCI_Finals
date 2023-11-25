@@ -53,7 +53,7 @@
             <div class="col h1 text-center">Products</div>
         </div>
         <div class="row d-flex justify-content-center">
-            <div class="col-2 card" style="width: 18rem;" name="Athletics Tee - Royal Blue" price="900" stock="21" ratings="4" sold="537">
+            <div class="col-2 card d-flex justify-content-center align-items-center" style="width: 18rem;" name="Athletics Tee - Royal Blue" price="900" stock="21" ratings="4" sold="537">
                 <img src="./products/shirt1.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Product Name</h5>
@@ -142,20 +142,20 @@
 
     <div id="overview" class="container-fluid fixed-top d-none justify-content-center align-items-center p-0 m-0">
         <div class="row">
-            <div class="col p-0">
+            <div class="col-12 col-lg-6 p-0">
                 <img src="./products/bot1.png" alt="" id="overview-product">
             </div>
-            <div class="col bg-light" id="overview-details">
+            <div class="col-12 col-lg-6 bg-light" id="overview-details">
                 <div class="row d-flex justify-content-end">
                     <div class="btn btn-link" id="overview-close" onclick="hide()"><i class="bi bi-x-lg"></i></div>
                 </div>
                 <div class="row">
-                    <div class="col h4" id="overview-title">Product Title</div>
+                    <div class="col-12 h4" id="overview-title">Product Title</div>
                 </div>
                 <div class="row" id="overview-review">
-                    <div class="col" id="overview-rating">Product Rating</div>
-                    <div class="col" id="overview-rated">Product Rated By</div>
-                    <div class="col" id="overview-sold">Product Sold</div>
+                    <div class="col-5 col-sm-4" id="overview-rating">Product Rating</div>
+                    <div class="col-2 col-sm-3" id="overview-rated">Product Rated By</div>
+                    <div class="col-5 col-sm-3" id="overview-sold">Product Sold</div>
                 </div>
                 <div class="row">
                     <div class="col h2" id="overview-price">Product Price</div>
@@ -163,7 +163,7 @@
                 <div class="row" id="overview-quantity-selection">
                     <div class="col-2">
                         <label for="customRange2" class="form-label">Quantity</label></div>
-                    <div class="col">
+                    <div class="col col-sm-12">
                         <input type="range" class="form-range" min="0" id="overview-quantity" value="0" oninput="updateQuantity(this.value)">
                     </div>
                     <div class="col-1">
@@ -184,12 +184,12 @@
                         <button class="btn btn-outline-secondary overview-sizes">XL</button>
                     </div>
                 </div>
-                <div class="row" id="final-action">
-                    <div class="col-5">
-                        <div class="btn btn-outline-success" id="final-add-to-cart" onclick="carted()"><i class="bi bi-cart-plus"></i>&nbsp;Add to Cart</div>
+                <div class="row d-flex justify-content-between" id="final-action">
+                    <div class="col-6">
+                        <button class="btn btn-outline-success" id="final-add-to-cart" onclick="carted()"><i class="bi bi-cart-plus"></i>&nbsp;Add to Cart</button>
                     </div>
-                    <div class="col-5">
-                        <div class="btn btn-success text-light" id="final-buy-now" onclick="bought()"><i class="bi bi-truck"></i>&nbsp;Buy Now</div>
+                    <div class="col-6">
+                        <button class="btn btn-success text-light" id="final-buy-now" onclick="bought()"><i class="bi bi-truck"></i>&nbsp;Buy Now</button>
                     </div>
                 </div>
                 <div class="row">
@@ -206,6 +206,19 @@
         </video>
         <div class="btn btn-dark text-light d-none justify-content-center align-items-center" id="skip" onclick="jump()">Skip Ads</div>
     </div>
+
+    <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+          </ul>
+          <p class="text-center text-muted">© 2023 Chronos Wears, Inc</p>
+        </footer>
+      </div>
     
     <!-- My Script -->
     <script src="main.js"></script>

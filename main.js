@@ -1,9 +1,31 @@
 const ads = document.getElementById("advertisement");
-const alert = document.getElementById('alert');
+const alert = document.getElementById('alert');    
+const buyNow = document.getElementById('final-buy-now');
 const currency = new Intl.NumberFormat(undefined, {style: 'currency', currency: 'PHP'});
 const product = document.getElementById("overview");
 const product_list = document.querySelectorAll(".card");
 const sizes = document.querySelectorAll(".overview-sizes");
+
+function bought()
+{
+    var qty = document.getElementById('overview-quantity').value;
+    if(qty == 0)
+    {
+        return;
+    }
+
+    playAds();
+
+    var element = document.querySelector('[name="' + document.getElementById('overview-title').textContent + '"]')
+    var sto = element.getAttribute("stock") - qty;
+    element.setAttribute("stock", sto);
+    overview(element);
+    alert.classList.remove('d-none');
+    alert.classList.add('d-block');
+    alert.innerHTML = "Item bought. (" + qty + " pieces.)";
+
+    updateQuantity(sto);
+}
 
 function carted()
 {
@@ -17,6 +39,13 @@ function hide()
 {
     product.classList.remove("d-flex");
     product.classList.add("d-none");
+}
+
+function jump()
+{
+    ads.classList.remove('d-flex');
+    ads.classList.add('d-none');
+    ads.children[0].volume = 0;
 }
 
 function overview(element)
@@ -87,16 +116,22 @@ function selectSize(element)
     element.style.color = "#fff";
 }
 
-function jump()
-{
-    ads.classList.remove('d-flex');
-    ads.classList.add('d-none');
-    ads.children[0].volume = 0;
-}
-
 function updateQuantity(value)
 {
     document.getElementById("overview-quantity-count").innerHTML = value;
+
+    const disabled = "#81ae90";
+    const enabled = "#408558";
+    if (value == 0)
+    {
+        buyNow.style.backgroundColor = disabled;
+        buyNow.value = 0;
+    }
+    else if (buyNow.value == 0)
+    {
+        buyNow.style.backgroundColor = enabled;
+        buyNow.value = -1;
+    }
 }
 
 for(var i = 0; i < product_list.length; i++)
@@ -118,23 +153,9 @@ for(var i = 0; i < sizes.length; i++)
     sizes[i].setAttribute("onclick", 'selectSize(this)');
 }
 
-function bought()
-{
-    var qty = document.getElementById('overview-quantity').value;
-    if(qty == 0)
-    {
-        return;
-    }
+selectSize(sizes[0]);
 
-    playAds();
-
-    var element = document.querySelector('[name="' + document.getElementById('overview-title').textContent + '"]')
-    var sto = element.getAttribute("stock");
-    element.setAttribute("stock", sto-qty);
-    overview(element);
-    alert.classList.remove('d-none');
-    alert.classList.add('d-block');
-    alert.innerHTML = "Item bought. (" + qty + " pieces.)";
-}
+updateQuantity(0);
 
 ads.children[0].volume = 0;
+console.log("Time will take you away");
