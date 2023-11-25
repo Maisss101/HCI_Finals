@@ -23,6 +23,12 @@ body
     position: relative;
 }
 
+button[enabled="true"]:hover
+{
+    background-color: rgba(25, 135, 84, 0.8) !important;
+    border-style: outset;
+}
+
 .card > *
 {
     cursor: pointer;

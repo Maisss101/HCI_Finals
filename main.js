@@ -121,15 +121,17 @@ function updateQuantity(value)
     document.getElementById("overview-quantity-count").innerHTML = value;
 
     const disabled = "#81ae90";
-    const enabled = "#408558";
+    const enabled = "#198754";
     if (value == 0)
     {
         buyNow.style.backgroundColor = disabled;
+        buyNow.setAttribute("enabled", "false");
         buyNow.value = 0;
     }
     else if (buyNow.value == 0)
     {
         buyNow.style.backgroundColor = enabled;
+        buyNow.setAttribute("enabled", "true");
         buyNow.value = -1;
     }
 }
